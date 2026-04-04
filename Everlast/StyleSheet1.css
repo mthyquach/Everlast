@@ -1,0 +1,18 @@
+﻿body { /* Sets font to Arial and background to sky blue */
+    font-family: 'Open Sans', Times, serif, sans-serif;
+    background-color: lightskyblue;
+    color: seagreen;
+    text-align: center;
+}
+
+/* Links: navy and no underline */
+a {
+    text-decoration: none;
+    color: navy;
+}
+
+/* Tables: Bisque background */
+table {
+    background-color: antiquewhite;
+    color: maroon; /* Added so text is visible against the light table */
+}
