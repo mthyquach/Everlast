@@ -1,18 +1,22 @@
-﻿body { /* Sets font to Arial and background to sky blue */
-    font-family: 'Open Sans', Times, serif, sans-serif;
-    background-color: lightskyblue;
-    color: seagreen;
+﻿body{
+    font-family: 'Open Sans', sans-serif;
+    background-color: floralwhite;
     text-align: center;
+    color: rosybrown;
 }
-
-/* Links: navy and no underline */
+button {
+    background-color: #D8B4A0;
+    color: white;
+    width: 100%;
+    padding: 15px;
+    border: none:
+}
 a {
-    text-decoration: none;
+    text-decoration: underline;
     color: navy;
+    text-align: left;
 }
-
-/* Tables: Bisque background */
 table {
-    background-color: antiquewhite;
-    color: maroon; /* Added so text is visible against the light table */
+    background-color: white;
+    color: rosybrown;
 }
