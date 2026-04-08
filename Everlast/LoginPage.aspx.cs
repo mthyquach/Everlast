@@ -51,8 +51,8 @@ namespace Everlast
             //While the reader is being populated, assigned the values
             while (myReader.Read())
             {
-                sEmail = myReader.GetString(0);
-                sPassword = myReader.GetString(1);
+                sEmail = myReader.GetString(4);
+                sPassword = myReader.GetString(5);
                 sUser = myReader.GetString(2) + " " + myReader.GetString(3);
             }
             if (txtEmail.Text == sEmail && txtPassword.Text == sPassword)

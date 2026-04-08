@@ -11,7 +11,7 @@
         }
         .auto-style2 {
             text-align: right;
-            width: 598px;
+            width: 448px;
         }
         .auto-style3 {
             text-align: center;

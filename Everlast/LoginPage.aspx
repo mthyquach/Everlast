@@ -14,11 +14,6 @@
         width: 238px;
         text-align: left;
     }
-    .auto-style9 {
-        height: 22px;
-        width: 238px;
-        text-align: left;
-    }
     .auto-style14 {
         text-align: center;
         height: 33px;
@@ -76,7 +71,7 @@
         </td>
     </tr>
     <tr>
-        <td class="auto-style14">Don&#39;t have an account?</td>
+        <td class="auto-style18">Don&#39;t have an account?</td>
         <td class="auto-style8">
             <asp:HyperLink ID="hlRegister" runat="server" NavigateUrl="~/RegistrationPage.aspx">Register Here</asp:HyperLink>
         </td>
