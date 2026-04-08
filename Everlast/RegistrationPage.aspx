@@ -128,7 +128,7 @@
         </tr>
         <tr>
             <td class="auto-style5">
-                <asp:Button ID="btnCreate" runat="server" OnClick="btnCreate_Click" Text="Create account" />
+                <asp:Button ID="btnCreate" runat="server" OnClick="btnCreate_Click" Text="Create " />
             </td>
             <td class="auto-style6">
                 <asp:Button ID="btnClear" runat="server" OnClick="btnClear_Click" Text="Clear" />
@@ -138,7 +138,7 @@
         <tr>
             <td class="auto-style2">Already have an account?</td>
             <td class="auto-style3">
-                <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/LoginPage.aspx">Here</asp:HyperLink>
+                <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/LoginPage.aspx">Login</asp:HyperLink>
             </td>
             <td>&nbsp;</td>
         </tr>
