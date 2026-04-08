@@ -12,10 +12,10 @@
         }
         .auto-style3 {
             text-align: left;
-            width: 365px;
+            width: 314px;
         }
         .auto-style4 {
-            width: 365px;
+            width: 314px;
         }
         .auto-style5 {
             text-align: right;
@@ -24,7 +24,7 @@
         }
         .auto-style6 {
             text-align: left;
-            width: 365px;
+            width: 314px;
             height: 30px;
         }
         .auto-style7 {
@@ -32,6 +32,23 @@
         }
         .auto-style8 {
             text-align: center;
+        }
+        .auto-style9 {
+            text-align: center;
+            font-size: medium;
+        }
+        .auto-style10 {
+            text-align: right;
+            width: 462px;
+            height: 26px;
+        }
+        .auto-style11 {
+            text-align: left;
+            width: 314px;
+            height: 26px;
+        }
+        .auto-style12 {
+            height: 26px;
         }
     </style>
 </asp:Content>
@@ -43,7 +60,7 @@
     <p>
         &nbsp;</p>
     <h1 class="auto-style8"><strong style="text-align: center">EVERLAST</strong></h1>
-    <p class="auto-style8">
+    <p class="auto-style9">
         Create an account to design a ring with us</p>
     <table align="center" class="auto-style1">
         <tr>
@@ -65,11 +82,11 @@
             </td>
         </tr>
         <tr>
-            <td class="auto-style2">Email:</td>
-            <td class="auto-style3">
+            <td class="auto-style10">Email:</td>
+            <td class="auto-style11">
                 <asp:TextBox ID="txtEmail" runat="server" TextMode="Email"></asp:TextBox>
             </td>
-            <td>
+            <td class="auto-style12">
                 <asp:RequiredFieldValidator ID="rfvEmail" runat="server" ControlToValidate="txtEmail" ErrorMessage="Required" style="font-size: small"></asp:RequiredFieldValidator>
             </td>
         </tr>

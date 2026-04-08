@@ -13,21 +13,24 @@
             text-align: right;
             width: 448px;
         }
-        .auto-style3 {
-            text-align: center;
-            font-size: large;
-        }
         .auto-style4 {
             text-align: center;
         }
         .auto-style5 {
             font-size: small;
         }
+        .auto-style6 {
+            height: 23px;
+        }
+        .auto-style7 {
+            font-size: x-large;
+            text-align: center;
+        }
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <p class="auto-style3">
-        Shipping and Payment Information</p>
+    <p class="auto-style7">
+        <strong>Shipping and Payment Information</strong></p>
     <p class="auto-style4">
         Please fill out all provided boxes below
     </p>
@@ -35,7 +38,7 @@
     </p>
     <table class="auto-style1">
         <tr>
-            <td colspan="3"><strong>Shipping Information</strong></td>
+            <td colspan="3" class="auto-style6" style="text-align: center"><strong>Shipping Information</strong></td>
         </tr>
         <tr>
             <td class="auto-style2">First Name </td>
@@ -117,7 +120,7 @@
             </td>
         </tr>
         <tr>
-            <td colspan="3"><strong>Payment Information</strong></td>
+            <td colspan="3" class="auto-style4"><strong style="text-align: center">Payment Information</strong></td>
         </tr>
         <tr>
             <td class="auto-style2">Name on Card </td>
