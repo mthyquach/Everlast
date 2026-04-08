@@ -11,14 +11,24 @@
         }
         .auto-style2 {
             text-align: right;
-            width: 929px;
+            width: 598px;
+        }
+        .auto-style3 {
+            text-align: center;
+            font-size: large;
+        }
+        .auto-style4 {
+            text-align: center;
+        }
+        .auto-style5 {
+            font-size: small;
         }
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <p style="text-align: left">
+    <p class="auto-style3">
         Shipping and Payment Information</p>
-    <p style="text-align: left">
+    <p class="auto-style4">
         Please fill out all provided boxes below
     </p>
     <p>
@@ -30,10 +40,10 @@
         <tr>
             <td class="auto-style2">First Name </td>
             <td>
-                <asp:TextBox ID="txtFName" runat="server"></asp:TextBox>
+                <asp:TextBox ID="txtFName" runat="server" style="margin-left: 0px"></asp:TextBox>
             </td>
             <td>
-                <asp:RequiredFieldValidator ID="rfvFName" runat="server" ErrorMessage="First Name is required"></asp:RequiredFieldValidator>
+                <asp:RequiredFieldValidator ID="rfvFName" runat="server" ErrorMessage="First Name is required" CssClass="auto-style5"></asp:RequiredFieldValidator>
             </td>
         </tr>
         <tr>
@@ -42,7 +52,7 @@
                 <asp:TextBox ID="txtLName" runat="server"></asp:TextBox>
             </td>
             <td>
-                <asp:RequiredFieldValidator ID="rfvLName" runat="server" ErrorMessage="Last Name is required"></asp:RequiredFieldValidator>
+                <asp:RequiredFieldValidator ID="rfvLName" runat="server" ErrorMessage="Last Name is required" CssClass="auto-style5"></asp:RequiredFieldValidator>
             </td>
         </tr>
         <tr>
@@ -51,7 +61,7 @@
                 <asp:TextBox ID="txtEmail" runat="server" TextMode="Email"></asp:TextBox>
             </td>
             <td>
-                <asp:RequiredFieldValidator ID="rfvEmail" runat="server" ErrorMessage="Email Address is required"></asp:RequiredFieldValidator>
+                <asp:RequiredFieldValidator ID="rfvEmail" runat="server" ErrorMessage="Email Address is required" CssClass="auto-style5"></asp:RequiredFieldValidator>
             </td>
         </tr>
         <tr>
@@ -60,7 +70,7 @@
                 <asp:TextBox ID="txtAddress" runat="server"></asp:TextBox>
             </td>
             <td>
-                <asp:RequiredFieldValidator ID="rfvAddress" runat="server" ErrorMessage="Street Address is required"></asp:RequiredFieldValidator>
+                <asp:RequiredFieldValidator ID="rfvAddress" runat="server" ErrorMessage="Street Address is required" CssClass="auto-style5"></asp:RequiredFieldValidator>
             </td>
         </tr>
         <tr>
@@ -69,7 +79,7 @@
                 <asp:TextBox ID="txtCity" runat="server"></asp:TextBox>
             </td>
             <td>
-                <asp:RequiredFieldValidator ID="rfvCity" runat="server" ErrorMessage="City is required"></asp:RequiredFieldValidator>
+                <asp:RequiredFieldValidator ID="rfvCity" runat="server" ErrorMessage="City is required" CssClass="auto-style5"></asp:RequiredFieldValidator>
             </td>
         </tr>
         <tr>
@@ -78,7 +88,7 @@
                 <asp:TextBox ID="txtState" runat="server">XX</asp:TextBox>
             </td>
             <td>
-                <asp:RequiredFieldValidator ID="rfvState" runat="server" ErrorMessage="State is required"></asp:RequiredFieldValidator>
+                <asp:RequiredFieldValidator ID="rfvState" runat="server" ErrorMessage="State is required" CssClass="auto-style5"></asp:RequiredFieldValidator>
             </td>
         </tr>
         <tr>
@@ -86,7 +96,7 @@
             <td>
                 <asp:TextBox ID="txtCountry" runat="server">United States</asp:TextBox>
             </td>
-            <td>&nbsp;</td>
+            <td class="auto-style5">&nbsp;</td>
         </tr>
         <tr>
             <td class="auto-style2">Zip Code </td>
@@ -94,7 +104,7 @@
                 <asp:TextBox ID="txtZip" runat="server" TextMode="Number">XXXXX</asp:TextBox>
             </td>
             <td>
-                <asp:RequiredFieldValidator ID="rfvZip" runat="server" ErrorMessage="Zip Code is required"></asp:RequiredFieldValidator>
+                <asp:RequiredFieldValidator ID="rfvZip" runat="server" ErrorMessage="Zip Code is required" CssClass="auto-style5"></asp:RequiredFieldValidator>
             </td>
         </tr>
         <tr>
@@ -103,7 +113,7 @@
                 <asp:TextBox ID="txtPhoneNum" runat="server" TextMode="Phone">(___)-___-___</asp:TextBox>
             </td>
             <td>
-                <asp:RequiredFieldValidator ID="rfvPhoneNum" runat="server" ErrorMessage="Phone number required"></asp:RequiredFieldValidator>
+                <asp:RequiredFieldValidator ID="rfvPhoneNum" runat="server" ErrorMessage="Phone number required" CssClass="auto-style5"></asp:RequiredFieldValidator>
             </td>
         </tr>
         <tr>
@@ -115,7 +125,7 @@
                 <asp:TextBox ID="txtCardName" runat="server"></asp:TextBox>
             </td>
             <td>
-                <asp:RequiredFieldValidator ID="rfvCardName" runat="server" ErrorMessage="Card Name required"></asp:RequiredFieldValidator>
+                <asp:RequiredFieldValidator ID="rfvCardName" runat="server" ErrorMessage="Card Name required" style="font-size: small"></asp:RequiredFieldValidator>
             </td>
         </tr>
         <tr>
@@ -123,7 +133,7 @@
             <td>
                 <asp:TextBox ID="txtCardNum" runat="server" TextMode="Number">XXXX XXXX XXXX XXXX</asp:TextBox>
             </td>
-            <td>
+            <td style="font-size: small">
                 <asp:RequiredFieldValidator ID="rfvCardNum" runat="server" ErrorMessage="Card Number required"></asp:RequiredFieldValidator>
             </td>
         </tr>
@@ -132,7 +142,7 @@
             <td>
                 <asp:TextBox ID="txtExpDate" runat="server" TextMode="Date">XX / XX</asp:TextBox>
             </td>
-            <td>
+            <td style="font-size: small">
                 <asp:RequiredFieldValidator ID="rfvExpDate" runat="server" ErrorMessage="Expiration date required"></asp:RequiredFieldValidator>
             </td>
         </tr>
@@ -142,7 +152,7 @@
                 <asp:TextBox ID="txtSecurityCode" runat="server" TextMode="Number">XXX</asp:TextBox>
             </td>
             <td>
-                <asp:RequiredFieldValidator ID="rfvSecurityCode" runat="server" ErrorMessage="Security Code required"></asp:RequiredFieldValidator>
+                <asp:RequiredFieldValidator ID="rfvSecurityCode" runat="server" ErrorMessage="Security Code required" style="font-size: small"></asp:RequiredFieldValidator>
             </td>
         </tr>
     </table>
