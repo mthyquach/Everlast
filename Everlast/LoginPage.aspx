@@ -26,7 +26,8 @@
     .auto-style16 {
         font-weight: normal;
         text-align: center;
-    }
+            font-size: medium;
+        }
     .auto-style17 {
         text-align: center;
     }

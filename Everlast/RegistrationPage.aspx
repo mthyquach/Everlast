@@ -8,7 +8,7 @@
         }
         .auto-style2 {
             text-align: right;
-            width: 601px;
+            width: 462px;
         }
         .auto-style3 {
             text-align: left;
@@ -20,7 +20,7 @@
         .auto-style5 {
             text-align: right;
             height: 30px;
-            width: 601px;
+            width: 462px;
         }
         .auto-style6 {
             text-align: left;
@@ -29,6 +29,9 @@
         }
         .auto-style7 {
             height: 30px;
+        }
+        .auto-style8 {
+            text-align: center;
         }
     </style>
 </asp:Content>
@@ -39,8 +42,8 @@
         &nbsp;</p>
     <p>
         &nbsp;</p>
-    <h1><strong>EVERLAST</strong></h1>
-    <p>
+    <h1 class="auto-style8"><strong style="text-align: center">EVERLAST</strong></h1>
+    <p class="auto-style8">
         Create an account to design a ring with us</p>
     <table align="center" class="auto-style1">
         <tr>
@@ -118,7 +121,7 @@
         <tr>
             <td class="auto-style2">Already have an account?</td>
             <td class="auto-style3">
-                <asp:HyperLink ID="HyperLink1" runat="server">Here</asp:HyperLink>
+                <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/LoginPage.aspx">Here</asp:HyperLink>
             </td>
             <td>&nbsp;</td>
         </tr>
