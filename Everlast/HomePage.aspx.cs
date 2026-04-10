@@ -13,5 +13,10 @@ namespace Everlast
         {
 
         }
+
+        protected void btnRing_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("CustomerForm.aspx");
+        }
     }
 }

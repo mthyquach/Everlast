@@ -70,6 +70,7 @@
     <Content Include="CustomerForm.aspx" />
     <Content Include="DesignSessionInfo.aspx" />
     <Content Include="HomePage.aspx" />
+    <Content Include="image\ring.jpg" />
     <Content Include="LoginPage.aspx" />
     <Content Include="MyAccount.aspx" />
     <Content Include="OrderConfirmation.aspx" />
@@ -186,9 +187,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="image\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

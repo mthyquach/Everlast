@@ -16,6 +16,7 @@
         }
         .auto-style4 {
             width: 314px;
+            text-align: left;
         }
         .auto-style5 {
             text-align: right;
