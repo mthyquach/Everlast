@@ -12,6 +12,19 @@
     <form id="form1" runat="server">
         <div>
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                <p>
+&nbsp;<asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/HomePage.aspx">Homepage</asp:HyperLink>
+&nbsp;|
+                    <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/CustomerForm.aspx">Customer Form</asp:HyperLink>
+&nbsp;|
+                    <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/DesignSessionInfo.aspx">Design Session</asp:HyperLink>
+&nbsp;|
+                    <asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="~/RingDesign.aspx">Ring Design</asp:HyperLink>
+                    |
+                    <asp:HyperLink ID="HyperLink5" runat="server">My Account</asp:HyperLink>
+                    |&nbsp;
+                    <asp:HyperLink ID="HyperLink6" runat="server" NavigateUrl="~/HomePage.aspx">Log Out</asp:HyperLink>
+&nbsp;</p>
             </asp:ContentPlaceHolder>
             <link rel="stylesheet" href="StyleSheet1.css">
         </div>

@@ -67,6 +67,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="CustomerForm.aspx" />
     <Content Include="DesignSessionInfo.aspx" />
     <Content Include="HomePage.aspx" />
     <Content Include="LoginPage.aspx" />
@@ -81,6 +82,13 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CustomerForm.aspx.cs">
+      <DependentUpon>CustomerForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CustomerForm.aspx.designer.cs">
+      <DependentUpon>CustomerForm.aspx</DependentUpon>
+    </Compile>
     <Compile Include="DesignSessionInfo.aspx.cs">
       <DependentUpon>DesignSessionInfo.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
