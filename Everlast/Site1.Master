@@ -13,7 +13,7 @@
         <div>
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
                 <p>
-&nbsp;<asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/HomePage.aspx">Homepage</asp:HyperLink>
+&nbsp;<asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/HomePage.aspx">Home</asp:HyperLink>
 &nbsp;|
                     <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/CustomerForm.aspx">Customer Form</asp:HyperLink>
 &nbsp;|
@@ -21,10 +21,8 @@
 &nbsp;|
                     <asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="~/RingDesign.aspx">Ring Design</asp:HyperLink>
                     |
-                    <asp:HyperLink ID="HyperLink5" runat="server">My Account</asp:HyperLink>
-                    |&nbsp;
-                    <asp:HyperLink ID="HyperLink6" runat="server" NavigateUrl="~/HomePage.aspx">Log Out</asp:HyperLink>
-&nbsp;</p>
+                    <asp:HyperLink ID="HyperLink5" runat="server" NavigateUrl="~/MyAccount.aspx">My Account</asp:HyperLink>
+                </p>
             </asp:ContentPlaceHolder>
             <link rel="stylesheet" href="StyleSheet1.css">
         </div>

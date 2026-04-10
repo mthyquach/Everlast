@@ -71,6 +71,7 @@
     <Content Include="DesignSessionInfo.aspx" />
     <Content Include="HomePage.aspx" />
     <Content Include="LoginPage.aspx" />
+    <Content Include="MyAccount.aspx" />
     <Content Include="OrderConfirmation.aspx" />
     <Content Include="OrderReview.aspx" />
     <Content Include="RegistrationPage.aspx" />
@@ -109,6 +110,13 @@
     </Compile>
     <Compile Include="LoginPage.aspx.designer.cs">
       <DependentUpon>LoginPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MyAccount.aspx.cs">
+      <DependentUpon>MyAccount.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MyAccount.aspx.designer.cs">
+      <DependentUpon>MyAccount.aspx</DependentUpon>
     </Compile>
     <Compile Include="OrderConfirmation.aspx.cs">
       <DependentUpon>OrderConfirmation.aspx</DependentUpon>
@@ -177,6 +185,9 @@
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="image\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
