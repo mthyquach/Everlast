@@ -4,12 +4,9 @@
         .auto-style1 {
             font-size: medium;
         }
-        .auto-style2 {
-            text-decoration: underline;
-        }
-        .auto-style3 {
-            text-decoration: none;
-        }
+    .auto-style3 {
+        text-decoration: none;
+    }
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -33,8 +30,8 @@
     </p>
     <p class="auto-style1">
         At Everlast, we believe an engagement ring should be more than a symbol - it should be a story. Every ring we create is handcrafted with intention, blending modern design with timeless romance to capture the moment your forever begings. Using ethically sourced, GIA-certified diamonds and artisan craftmanship, we transform your vision into a piece that is unqiuely yours. This is where love becomes art, and your story becomes Everlast.</p>
-    <p class="auto-style1">
-        <asp:Button ID="btnRing" runat="server" OnClick="btnRing_Click" Text="Start Designing Your Ring" />
-    </p>
+<p class="auto-style1">
+        <asp:Button ID="btnRing" runat="server" OnClick="btnRing_Click" Text="Start Designing Your Ring" BackColor="White" BorderColor="RosyBrown" BorderStyle="Double" />
+</p>
 </asp:Content>
 

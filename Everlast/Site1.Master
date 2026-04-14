@@ -7,21 +7,26 @@
     <title></title>
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style2 {
+            text-decoration: none;
+        }
+    </style>
 </head>
 <body>
     <form id="form1" runat="server">
         <div>
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
                 <p>
-&nbsp;<asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/HomePage.aspx">Home</asp:HyperLink>
+&nbsp;<asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/HomePage.aspx" CssClass="auto-style2">Home</asp:HyperLink>
 &nbsp;|
-                    <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/CustomerForm.aspx">Customer Form</asp:HyperLink>
+                    <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/CustomerForm.aspx" CssClass="auto-style2">Customer Form</asp:HyperLink>
 &nbsp;|
-                    <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/DesignSessionInfo.aspx">Design Session</asp:HyperLink>
+                    <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/DesignSessionInfo.aspx" CssClass="auto-style2">Design Session</asp:HyperLink>
 &nbsp;|
-                    <asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="~/RingDesign.aspx">Ring Design</asp:HyperLink>
+                    <asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="~/RingDesign.aspx" CssClass="auto-style2">Ring Design</asp:HyperLink>
                     |
-                    <asp:HyperLink ID="HyperLink5" runat="server" NavigateUrl="~/MyAccount.aspx">My Account</asp:HyperLink>
+                    <asp:HyperLink ID="HyperLink5" runat="server" NavigateUrl="~/MyAccount.aspx" CssClass="auto-style2">My Account</asp:HyperLink>
                 </p>
             </asp:ContentPlaceHolder>
             <link rel="stylesheet" href="StyleSheet1.css">

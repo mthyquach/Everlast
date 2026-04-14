@@ -30,8 +30,8 @@ namespace Everlast
                         Connection = myConnection
                     };
 
-                    myCommand.Parameters.AddWithValue("@Email", Session["email"].ToString());
-                    myCommand.Parameters.AddWithValue("@Password", Session["password"].ToString());
+                    myCommand.Parameters.AddWithValue("@CustomerEmail", Session["email"].ToString());
+                    myCommand.Parameters.AddWithValue("@CustomerPassword", Session["password"].ToString());
 
                     myConnection.Open();
 
@@ -41,8 +41,8 @@ namespace Everlast
                     {
                         lblEmail.Text = myReader.GetString(4);
                         lblPass.Text = myReader.GetString(5);
-                        lblFName.Text = myReader.GetString(6);
-                        lblLName.Text = myReader.GetString(7);
+                        lblFName.Text = myReader.GetString(2);
+                        lblLName.Text = myReader.GetString(3);
                         lblPhone.Text = myReader.GetInt32(10).ToString();
 
                     }
@@ -159,42 +159,42 @@ namespace Everlast
 
             UCommand.Connection = UCon;
 
-            UCommand.Parameters.AddWithValue("@Email", Session["email"].ToString());
+            UCommand.Parameters.AddWithValue("@CustomerEmail", Session["email"].ToString());
 
             if (cbPass.Checked == true)
             {
-                UCommand.Parameters.AddWithValue("@Password", txtPass.Text);
+                UCommand.Parameters.AddWithValue("@CustmerPassword", txtPass.Text);
             }
             else
             {
-                UCommand.Parameters.AddWithValue("@Password", lblPass.Text);
+                UCommand.Parameters.AddWithValue("@CustomerPassword", lblPass.Text);
             }
 
             if (cbFName.Checked == true)
             {
-                UCommand.Parameters.AddWithValue("@FName", txtFName.Text);
+                UCommand.Parameters.AddWithValue("@CustomerFName", txtFName.Text);
             }
             else
             {
-                UCommand.Parameters.AddWithValue("FName", lblFName.Text);
+                UCommand.Parameters.AddWithValue("@CustomerFName", lblFName.Text);
             }
 
             if (cbLName.Checked == true)
             {
-                UCommand.Parameters.AddWithValue("@LName", txtLName.Text);
+                UCommand.Parameters.AddWithValue("@CustomerLName", txtLName.Text);
             }
             else
             {
-                UCommand.Parameters.AddWithValue("@LName", lblLName.Text);
+                UCommand.Parameters.AddWithValue("@CustomerLName", lblLName.Text);
             }
 
             if (cbPhone.Checked == true)
             {
-                UCommand.Parameters.AddWithValue("@Phone", txtPhone.Text);
+                UCommand.Parameters.AddWithValue("@CustomerPhone", txtPhone.Text);
             }
             else
             {
-                UCommand.Parameters.AddWithValue("@Phone", lblPhone.Text);
+                UCommand.Parameters.AddWithValue("@CustomerPhone", lblPhone.Text);
             }
 
             UCon.Open();

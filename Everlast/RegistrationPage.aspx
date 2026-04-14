@@ -16,7 +16,6 @@
         }
         .auto-style4 {
             width: 314px;
-            text-align: left;
         }
         .auto-style5 {
             text-align: right;
@@ -148,7 +147,30 @@
                 <asp:Label ID="lblMessage" runat="server"></asp:Label>
             </td>
             <td class="auto-style4">
-                <asp:SqlDataSource ID="SqlDataSource1" runat="server"></asp:SqlDataSource>
+                <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:S26Team4ConnectionString %>" DeleteCommand="DELETE FROM [Customer] WHERE [CustomerID] = @CustomerID" InsertCommand="INSERT INTO [Customer] ([CustomerID], [CustomerName], [CustomerEmail], [CustomerPhone], [CustomerAddress], [CustomerPreferredBudget]) VALUES (@CustomerID, @CustomerName, @CustomerEmail, @CustomerPhone, @CustomerAddress, @CustomerPreferredBudget)" SelectCommand="SELECT * FROM [Customer] WHERE ([CustomerEmail] = @CustomerEmail)" UpdateCommand="UPDATE [Customer] SET [CustomerName] = @CustomerName, [CustomerEmail] = @CustomerEmail, [CustomerPhone] = @CustomerPhone, [CustomerAddress] = @CustomerAddress, [CustomerPreferredBudget] = @CustomerPreferredBudget WHERE [CustomerID] = @CustomerID">
+                    <DeleteParameters>
+                        <asp:Parameter Name="CustomerID" Type="Int32" />
+                    </DeleteParameters>
+                    <InsertParameters>
+                        <asp:Parameter Name="CustomerID" Type="Int32" />
+                        <asp:Parameter Name="CustomerName" Type="String" />
+                        <asp:Parameter Name="CustomerEmail" Type="String" />
+                        <asp:Parameter Name="CustomerPhone" Type="String" />
+                        <asp:Parameter Name="CustomerAddress" Type="String" />
+                        <asp:Parameter Name="CustomerPreferredBudget" Type="Decimal" />
+                    </InsertParameters>
+                    <SelectParameters>
+                        <asp:Parameter Name="CustomerEmail" Type="String" />
+                    </SelectParameters>
+                    <UpdateParameters>
+                        <asp:Parameter Name="CustomerName" Type="String" />
+                        <asp:Parameter Name="CustomerEmail" Type="String" />
+                        <asp:Parameter Name="CustomerPhone" Type="String" />
+                        <asp:Parameter Name="CustomerAddress" Type="String" />
+                        <asp:Parameter Name="CustomerPreferredBudget" Type="Decimal" />
+                        <asp:Parameter Name="CustomerID" Type="Int32" />
+                    </UpdateParameters>
+                </asp:SqlDataSource>
             </td>
             <td>&nbsp;</td>
         </tr>

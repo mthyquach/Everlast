@@ -79,7 +79,11 @@
     </tr>
     <tr>
         <td class="auto-style4" colspan="2">
-            <asp:SqlDataSource ID="SqlDataSource1" runat="server" OnSelecting="SqlDataSource1_Selecting"></asp:SqlDataSource>
+            <asp:SqlDataSource ID="SqlDataSource1" runat="server" OnSelecting="SqlDataSource1_Selecting" ConnectionString="<%$ ConnectionStrings:S26Team4ConnectionString %>" ProviderName="<%$ ConnectionStrings:S26Team4ConnectionString.ProviderName %>" SelectCommand="SELECT * FROM [Customer] WHERE ([CustomerEmail] = @CustomerEmail)">
+                <SelectParameters>
+                    <asp:Parameter Name="CustomerEmail" Type="String" />
+                </SelectParameters>
+            </asp:SqlDataSource>
         </td>
     </tr>
 </table>

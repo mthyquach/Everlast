@@ -28,11 +28,11 @@ namespace Everlast
 
             RegCommand.Connection = RegCon;
 
-            RegCommand.Parameters.AddWithValue("@FName", txtFName.Text);
-            RegCommand.Parameters.AddWithValue("@LName", txtLName.Text);
-            RegCommand.Parameters.AddWithValue("@Email", txtEmail.Text);
-            RegCommand.Parameters.AddWithValue("@Password", txtPass.Text);
-            RegCommand.Parameters.AddWithValue("@Phone", txtPhone.Text);
+            RegCommand.Parameters.AddWithValue("@CustomerFName", txtFName.Text);
+            RegCommand.Parameters.AddWithValue("@CustomerLName", txtLName.Text);
+            RegCommand.Parameters.AddWithValue("@CustomerEmail", txtEmail.Text);
+            RegCommand.Parameters.AddWithValue("@CustomerPassword", txtPass.Text);
+            RegCommand.Parameters.AddWithValue("@CustomerPhone", txtPhone.Text);
 
             //Open the connection
             RegCon.Open();
@@ -47,7 +47,7 @@ namespace Everlast
             lblMessage.Text = "Your account is created sucessfully";
 
             //Redirect to homepage
-            Response.Redirect("HomePage.aspx");
+            Response.Redirect("LoginPage.aspx");
 
         }
 
