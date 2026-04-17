@@ -39,8 +39,8 @@ namespace Everlast
                 Connection = myConnection
             };
             //Set the parameters
-            myCommand.Parameters.AddWithValue("@Email", txtEmail.Text);
-            myCommand.Parameters.AddWithValue("@Password", txtPassword.Text);
+            myCommand.Parameters.AddWithValue("@CustomerEmail", txtEmail.Text);
+            myCommand.Parameters.AddWithValue("@CustPassword", txtPassword.Text);
 
             //Open Connection
             myConnection.Open();
@@ -51,9 +51,9 @@ namespace Everlast
             //While the reader is being populated, assigned the values
             while (myReader.Read())
             {
-                sEmail = myReader.GetString(3);
-                sPassword = myReader.GetString(5);
-                sUser = myReader.GetString(2) + " " + myReader.GetString(3);
+                sEmail = myReader.GetString(2);
+                sPassword = myReader.GetString(6);
+                sUser = myReader.GetString(4) + " " + myReader.GetString(5);
             }
             if (txtEmail.Text == sEmail && txtPassword.Text == sPassword)
             {

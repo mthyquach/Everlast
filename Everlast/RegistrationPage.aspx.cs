@@ -28,10 +28,10 @@ namespace Everlast
 
             RegCommand.Connection = RegCon;
 
-            RegCommand.Parameters.AddWithValue("@CustomerFName", txtFName.Text);
-            RegCommand.Parameters.AddWithValue("@CustomerLName", txtLName.Text);
+            RegCommand.Parameters.AddWithValue("@CustFName", txtFName.Text);
+            RegCommand.Parameters.AddWithValue("@CustLName", txtLName.Text);
             RegCommand.Parameters.AddWithValue("@CustomerEmail", txtEmail.Text);
-            RegCommand.Parameters.AddWithValue("@CustomerPassword", txtPass.Text);
+            RegCommand.Parameters.AddWithValue("@Custassword", txtPass.Text);
             RegCommand.Parameters.AddWithValue("@CustomerPhone", txtPhone.Text);
 
             //Open the connection

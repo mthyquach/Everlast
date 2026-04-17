@@ -31,7 +31,7 @@ namespace Everlast
                     };
 
                     myCommand.Parameters.AddWithValue("@CustomerEmail", Session["email"].ToString());
-                    myCommand.Parameters.AddWithValue("@CustomerPassword", Session["password"].ToString());
+                    myCommand.Parameters.AddWithValue("@CustPassword", Session["password"].ToString());
 
                     myConnection.Open();
 
@@ -39,11 +39,11 @@ namespace Everlast
 
                     while (myReader.Read())
                     {
-                        lblEmail.Text = myReader.GetString(4);
-                        lblPass.Text = myReader.GetString(5);
-                        lblFName.Text = myReader.GetString(2);
-                        lblLName.Text = myReader.GetString(3);
-                        lblPhone.Text = myReader.GetInt32(10).ToString();
+                        lblEmail.Text = myReader.GetString(2);
+                        lblPass.Text = myReader.GetString(6);
+                        lblFName.Text = myReader.GetString(4);
+                        lblLName.Text = myReader.GetString(5);
+                        lblPhone.Text = myReader.GetInt32(3).ToString();
 
                     }
                     myConnection.Close();
@@ -163,20 +163,20 @@ namespace Everlast
 
             if (cbPass.Checked == true)
             {
-                UCommand.Parameters.AddWithValue("@CustmerPassword", txtPass.Text);
+                UCommand.Parameters.AddWithValue("@CustPassword", txtPass.Text);
             }
             else
             {
-                UCommand.Parameters.AddWithValue("@CustomerPassword", lblPass.Text);
+                UCommand.Parameters.AddWithValue("@CustPassword", lblPass.Text);
             }
 
             if (cbFName.Checked == true)
             {
-                UCommand.Parameters.AddWithValue("@CustomerFName", txtFName.Text);
+                UCommand.Parameters.AddWithValue("@CustFName", txtFName.Text);
             }
             else
             {
-                UCommand.Parameters.AddWithValue("@CustomerFName", lblFName.Text);
+                UCommand.Parameters.AddWithValue("@CustFName", lblFName.Text);
             }
 
             if (cbLName.Checked == true)
@@ -185,7 +185,7 @@ namespace Everlast
             }
             else
             {
-                UCommand.Parameters.AddWithValue("@CustomerLName", lblLName.Text);
+                UCommand.Parameters.AddWithValue("@CustLName", lblLName.Text);
             }
 
             if (cbPhone.Checked == true)
