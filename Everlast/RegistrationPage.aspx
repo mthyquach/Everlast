@@ -8,7 +8,7 @@
         }
         .auto-style2 {
             text-align: right;
-            width: 462px;
+            width: 396px;
         }
         .auto-style3 {
             text-align: left;
@@ -20,7 +20,7 @@
         .auto-style5 {
             text-align: right;
             height: 30px;
-            width: 462px;
+            width: 396px;
         }
         .auto-style6 {
             text-align: left;
@@ -39,7 +39,7 @@
         }
         .auto-style10 {
             text-align: right;
-            width: 462px;
+            width: 396px;
             height: 26px;
         }
         .auto-style11 {

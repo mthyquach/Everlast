@@ -2,31 +2,38 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <style type="text/css">
     .auto-style2 {
-        text-decoration: none;
-    }
+            text-decoration: none;
+            font-size: 20px;
+        }
     .auto-style3 {
         width: 100%;
     }
     .auto-style4 {
         font-size: small;
     }
-</style>
+        .auto-style5 {
+            font-size: 20px;
+        }
+    </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <h1>
         <strong>EVERLAST</strong></h1>
     <p>
-        <asp:HyperLink ID="HyperLink5" runat="server">Home</asp:HyperLink>
-&nbsp;|<asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/CustomerForm.aspx" CssClass="auto-style2">Customer Form</asp:HyperLink>
-&nbsp;|
+        <asp:HyperLink ID="HyperLink5" runat="server" CssClass="auto-style5">Home</asp:HyperLink>
+        <span class="auto-style5">&nbsp;|</span><asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/CustomerForm.aspx" CssClass="auto-style2">Customer Form</asp:HyperLink>
+        <span class="auto-style5">&nbsp;|
+    </span>
     <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/DesignSessionInfo.aspx" CssClass="auto-style2">Design Session</asp:HyperLink>
-&nbsp;|
+        <span class="auto-style5">&nbsp;|
+    </span>
     <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/RingDesign.aspx" CssClass="auto-style2">Ring Design</asp:HyperLink>
-&nbsp;|
-    <strong>My Account&nbsp;</strong></p>
+        <span class="auto-style5">&nbsp;|
+    </span>
+    <strong><span class="auto-style5">My Account&nbsp;</span></strong></p>
     <p>
         View your order status and order tracking
-        <asp:HyperLink ID="HyperLink6" runat="server">here </asp:HyperLink>
+        <asp:HyperLink ID="HyperLink6" runat="server" NavigateUrl="~/TrackingPage.aspx">here </asp:HyperLink>
 </p>
 <p>
     Update your account information below</p>
