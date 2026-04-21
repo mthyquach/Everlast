@@ -14,6 +14,13 @@
         .auto-style5 {
             font-size: 20px;
         }
+        .auto-style6 {
+            height: 26px;
+        }
+        .auto-style7 {
+            height: 26px;
+            width: 1030px;
+        }
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -160,7 +167,50 @@
     </tr>
 </table>
 <p>
-    &nbsp;</p>
+    Delete your account below by typing your email</p>
+    <table align="center" class="auto-style3">
+        <tr>
+            <td class="auto-style7">
+                <asp:TextBox ID="txtEmail" runat="server" TextMode="Email"></asp:TextBox>
+            </td>
+            <td class="auto-style6">
+                <asp:RequiredFieldValidator ID="rfvEmail" runat="server" ControlToValidate="txtEmail" ErrorMessage="Email must exist" style="font-size: small"></asp:RequiredFieldValidator>
+            </td>
+        </tr>
+        <tr>
+            <td class="auto-style7">
+                <asp:Button ID="btnDelete" runat="server" OnClick="btnDelete_Click" Text="Delete" />
+            </td>
+            <td class="auto-style6">
+                <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:S26Team4ConnectionString %>" DeleteCommand="DELETE FROM [Customer] WHERE [CustomerID] = @CustomerID" InsertCommand="INSERT INTO [Customer] ([CustomerID], [CustomerEmail], [CustomerPhone], [CustFName], [CustLName], [CustPassword]) VALUES (@CustomerID, @CustomerEmail, @CustomerPhone, @CustFName, @CustLName, @CustPassword)" SelectCommand="SELECT * FROM [Customer] WHERE ([CustomerEmail] = @CustomerEmail)" UpdateCommand="UPDATE [Customer] SET [CustomerEmail] = @CustomerEmail, [CustomerPhone] = @CustomerPhone, [CustFName] = @CustFName, [CustLName] = @CustLName, [CustPassword] = @CustPassword WHERE [CustomerID] = @CustomerID">
+                    <DeleteParameters>
+                        <asp:Parameter Name="CustomerID" Type="Int32" />
+                    </DeleteParameters>
+                    <InsertParameters>
+                        <asp:Parameter Name="CustomerID" Type="Int32" />
+                        <asp:Parameter Name="CustomerEmail" Type="String" />
+                        <asp:Parameter Name="CustomerPhone" Type="String" />
+                        <asp:Parameter Name="CustFName" Type="String" />
+                        <asp:Parameter Name="CustLName" Type="String" />
+                        <asp:Parameter Name="CustPassword" Type="String" />
+                    </InsertParameters>
+                    <SelectParameters>
+                        <asp:Parameter Name="CustomerEmail" Type="String" />
+                    </SelectParameters>
+                    <UpdateParameters>
+                        <asp:Parameter Name="CustomerEmail" Type="String" />
+                        <asp:Parameter Name="CustomerPhone" Type="String" />
+                        <asp:Parameter Name="CustFName" Type="String" />
+                        <asp:Parameter Name="CustLName" Type="String" />
+                        <asp:Parameter Name="CustPassword" Type="String" />
+                        <asp:Parameter Name="CustomerID" Type="Int32" />
+                    </UpdateParameters>
+                </asp:SqlDataSource>
+            </td>
+        </tr>
+    </table>
+    <p>
+        &nbsp;</p>
 <p>
     &nbsp;</p>
 </asp:Content>

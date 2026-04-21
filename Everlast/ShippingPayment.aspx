@@ -179,5 +179,14 @@
                 <asp:RequiredFieldValidator ID="rfvSecurityCode" runat="server" ErrorMessage="Security Code required" style="font-size: small"></asp:RequiredFieldValidator>
             </td>
         </tr>
+        <tr>
+            <td class="auto-style2">&nbsp;</td>
+            <td>
+                <asp:Button ID="btnCheckout" runat="server" OnClick="btnCheckout_Click" Text="Checkout" />
+            </td>
+            <td>
+                <asp:Button ID="btnClear" runat="server" OnClick="btnClear_Click" Text="Clear " CausesValidation="false" />
+            </td>
+        </tr>
     </table>
 </asp:Content>

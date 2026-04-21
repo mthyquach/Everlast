@@ -3,6 +3,7 @@
     <style type="text/css">
         .auto-style1 {
             font-size: medium;
+            text-align: center;
         }
     .auto-style3 {
             text-decoration: none;
@@ -45,13 +46,17 @@
         }
         .auto-style4 {
             font-size: 20px;
+            text-align: center;
+        }
+        .auto-style5 {
+            text-align: center;
         }
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <h1>
-        <strong>EVERLAST</strong></h1>
-    <p>
+    <h1 class="auto-style5">
+        <strong style="text-align: center">EVERLAST</strong></h1>
+    <p style="text-align: center">
         <strong><span class="auto-style4">Home</span></strong><span class="auto-style4"> |</span><asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/CustomerForm.aspx" CssClass="auto-style3">Customer Form</asp:HyperLink>
         <span class="auto-style4">&nbsp;|
     </span>
@@ -65,7 +70,7 @@
 &nbsp;</p>
     <p>
         &nbsp;</p>
-    <h2>
+    <h2 style="text-align: center">
         Design the Rings that Tell Your Story</h2>
     <p>
         <asp:Image ID="Image1" runat="server" CssClass="auto-style1" ImageUrl="~/image/ring.jpg" />
@@ -73,7 +78,7 @@
     <p class="auto-style1">
         At Everlast, we believe an engagement ring should be more than a symbol - it should be a story. Every ring we create is handcrafted with intention, blending modern design with timeless romance to capture the moment your forever begings. Using ethically sourced, GIA-certified diamonds and artisan craftmanship, we transform your vision into a piece that is unqiuely yours. This is where love becomes art, and your story becomes Everlast.</p>
 <p class="auto-style1">
-        <asp:Button ID="btnRing" runat="server" OnClick="btnRing_Click" Text="Start Designing Your Ring" BackColor="White" BorderColor="RosyBrown" BorderStyle="Double" style="font-size: medium" />
+        <asp:Button ID="btnRing" runat="server" OnClick="btnRing_Click" Text="Start Designing Your Ring" BackColor="White" BorderColor="RosyBrown" BorderStyle="Double" style="font-size: medium; text-align: center;" />
 </p>
 
         <div class="everlast-footer">

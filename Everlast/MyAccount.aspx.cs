@@ -74,6 +74,10 @@ namespace Everlast
                     Response.Redirect("LoginPage.aspx");
                 }
             }
+            if (Session["email"] == null)
+            {
+                Response.Redirect("LoginPage.aspx");
+            }
         }
 
         protected void CheckBox1_CheckedChanged(object sender, EventArgs e)
@@ -213,6 +217,22 @@ namespace Everlast
             txtFName.Text = "";
             txtLName.Text = "";
             txtPhone.Text = "";
+        }
+
+        protected void btnDelete_Click(object sender, EventArgs e)
+        {
+            if (Session["email"].ToString () == txtEmail.Text)
+            {
+                SqlConnection DCon = new SqlConnection(SqlDataSource2.ConnectionString);
+                SqlCommand DCommand = new SqlCommand(SqlDataSource2.DeleteCommand);
+                DCommand.Connection = DCon;
+                DCommand.Parameters.AddWithValue("@CustomerEmail", Session["Email"].ToString());
+                DCon.Open();
+                DCommand.ExecuteNonQuery();
+                DCon.Close();
+
+                Response.Redirect("LoginPage.aspx");
+            }
         }
     }
 }

@@ -8,23 +8,23 @@
         }
         .auto-style2 {
             text-align: right;
-            width: 396px;
+            width: 598px;
         }
         .auto-style3 {
             text-align: left;
-            width: 314px;
+            width: 487px;
         }
         .auto-style4 {
-            width: 314px;
+            width: 487px;
         }
         .auto-style5 {
             text-align: right;
             height: 30px;
-            width: 396px;
+            width: 598px;
         }
         .auto-style6 {
             text-align: left;
-            width: 314px;
+            width: 487px;
             height: 30px;
         }
         .auto-style7 {
@@ -39,12 +39,12 @@
         }
         .auto-style10 {
             text-align: right;
-            width: 396px;
+            width: 598px;
             height: 26px;
         }
         .auto-style11 {
             text-align: left;
-            width: 314px;
+            width: 487px;
             height: 26px;
         }
         .auto-style12 {

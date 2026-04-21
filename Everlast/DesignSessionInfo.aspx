@@ -134,9 +134,7 @@
     <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/RingDesign.aspx" style="text-decoration: none">Ring Design</asp:HyperLink>
 &nbsp;|
     <asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="~/MyAccount.aspx" style="text-decoration: none">My Account</asp:HyperLink>
-&nbsp;<strong><br />
-                </strong>
-            </p>
+&nbsp;</p>
         </div>
         <hr class="everlast-divider" />
 
