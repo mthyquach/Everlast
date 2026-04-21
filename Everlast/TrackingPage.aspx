@@ -3,7 +3,7 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <style>
-        .card { max-width: 900px; padding: 18px; border: 1px solid #ddd; border-radius: 10px; background: #fff; }
+        .card { max-width: 900px; padding: 18px; border: 1px solid #ddd; border-radius: 10px; background: #fff; font: 'Open Sans', sans-serif}
         .muted { color: #666; }
         .btn { padding: 10px 14px; border: 1px solid #333; background: #111; color: #fff; border-radius: 8px; cursor: pointer; }
         .btnLink { padding: 10px 14px; border: 1px solid #333; background: #fff; color: #111; border-radius: 8px; text-decoration:none; display:inline-block; }
@@ -17,6 +17,37 @@
         .auto-style8 {
             text-align: center;
             font-size: 20px;
+            font-family: 'Open Sans', sans-serif;
+        }
+        .newStyle1 {
+            font-family: "Open Sans";
+        }
+        .newStyle2 {
+            font-family: "open Sans";
+        }
+        .newStyle3 {
+            font-family: "Open Sans";
+        }
+        .newStyle4 {
+            font-family: "Open Sans";
+        }
+        .newStyle5 {
+            font-family: "Open Sans";
+        }
+        .newStyle6 {
+            font-family: "open Sans";
+        }
+        .o {
+            font-family: "open sans";
+        }
+        .newStyle7 {
+            font-family: "open Sans";
+        }
+        .newStyle8 {
+            font-family: "open Sans";
+        }
+        .newStyle9 {
+            font-family: "open sans";
         }
         </style>
 </asp:Content>
@@ -48,7 +79,7 @@
 
     <div class="card">
         <p>
-            <span class="label">Order ID:</span>
+            <span class="newStyle1">Order ID:</span>
             <asp:TextBox ID="txtOrderId" runat="server" Width="160px" />
             <asp:RequiredFieldValidator ID="rfvOrder" runat="server"
                 ControlToValidate="txtOrderId" ErrorMessage="Order ID required."
@@ -58,21 +89,22 @@
         </p>
 
         <p>
-            <span class="label">Current Status:</span>
+            <span class="newStyle2">Current Status:</span>
             <asp:Label ID="lblStatus" runat="server" Text="—" CssClass="pill" />
+            <span class="newStyle2">
             <br />
-            <span class="label">Tracking #:</span>
+            Tracking #:</span>
             <asp:Label ID="lblTracking" runat="server" Text="Not available yet" />
         </p>
 
-        <h3>Progress</h3>
+        <h3><span class="newStyle3">Progress</span></h3>
 
         <asp:Panel ID="pnlSteps" runat="server" Visible="false">
-            <div id="s1" runat="server" class="step"><div class="dot"></div><div><div class="label">Concept</div><div class="muted">Order received and confirmed</div></div></div>
-            <div id="s2" runat="server" class="step"><div class="dot"></div><div><div class="label">Design</div><div class="muted">Ring design finalized</div></div></div>
-            <div id="s3" runat="server" class="step"><div class="dot"></div><div><div class="label">Production</div><div class="muted">Crafting and stone setting</div></div></div>
-            <div id="s4" runat="server" class="step"><div class="dot"></div><div><div class="label">Packaging</div><div class="muted">Quality check and packaging</div></div></div>
-            <div id="s5" runat="server" class="step"><div class="dot"></div><div><div class="label">Delivery</div><div class="muted">Shipped and out for delivery</div></div></div>
+            <div id="s1" runat="server" class="step"><div class="dot"></div><div><div class="newStyle4"><strong>Concept</strong></div><div class="newStyle4">Order received and confirmed</div></div></div>
+            <div id="s2" runat="server" class="step"><div class="dot"></div><div style="font-family: 'Open Sans'"><div class="newStyle5"><strong>Design</strong></div><div class="newStyle5">Ring design finalized</div></div></div>
+            <div id="s3" runat="server" class="step"><div class="dot"></div><div class="o"><div class="newStyle7"><strong>Production</strong></div><div class="newStyle7">Crafting and stone setting</div></div></div>
+            <div id="s4" runat="server" class="o"><div class="dot"></div><div><div class="newStyle8"><strong>Packaging</strong></div><div class="newStyle8">Quality check and packaging</div></div></div>
+            <div id="s5" runat="server" class="o"><div class="dot"></div><div><div class="newStyle9"><strong>Delivery</strong></div><div class="newStyle9">Shipped and out for delivery</div></div></div>
         </asp:Panel>
 
         <!-- LINKS again at bottom -->

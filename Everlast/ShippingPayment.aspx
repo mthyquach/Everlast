@@ -7,7 +7,7 @@
         .auto-style1 {
             width: 100%;
             border: 1px solid #BC8F8F;
-            background-color: white;
+            background-color: floralwhite;
         }
         .auto-style2 {
             text-align: right;
