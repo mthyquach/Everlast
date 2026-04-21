@@ -87,13 +87,58 @@ namespace Everlast
         protected global::System.Web.UI.WebControls.DropDownList ddlSize;
 
         /// <summary>
-        /// txtEngraving control.
+        /// ddlShape control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtEngraving;
+        protected global::System.Web.UI.WebControls.DropDownList ddlShape;
+
+        /// <summary>
+        /// ddlCaratSize control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList ddlCaratSize;
+
+        /// <summary>
+        /// ddlCaratWeight control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList ddlCaratWeight;
+
+        /// <summary>
+        /// ddlSetting control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList ddlSetting;
+
+        /// <summary>
+        /// ddlBandStyle control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList ddlBandStyle;
+
+        /// <summary>
+        /// ddlProngStyle control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList ddlProngStyle;
 
         /// <summary>
         /// btnShowDesign control.

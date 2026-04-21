@@ -131,6 +131,8 @@
                 <asp:Button ID="btnSubmitForm" runat="server" Text="Submit Form" CssClass="submit-btn" OnClick="btnSubmitForm_Click" />
             </div>
 
+            <asp:SqlDataSource ID="SqlDataSource1" runat="server"></asp:SqlDataSource>
+
             <asp:Label ID="lblMessage" runat="server" CssClass="message-label" />
         </div>
 

@@ -180,7 +180,60 @@
             </td>
         </tr>
         <tr>
-            <td class="auto-style2">&nbsp;</td>
+            <td class="auto-style2">
+                <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:S26Team4ConnectionString %>" DeleteCommand="DELETE FROM [Payment] WHERE [PaymentID] = @PaymentID" InsertCommand="INSERT INTO [Payment] ([PaymentID], [OrderID], [PaymentAmount], [PaymentDate], [PaymentMethod], [PaymentStatus]) VALUES (@PaymentID, @OrderID, @PaymentAmount, @PaymentDate, @PaymentMethod, @PaymentStatus)" SelectCommand="SELECT * FROM [Payment] WHERE ([PaymentID] = @PaymentID)" UpdateCommand="UPDATE [Payment] SET [OrderID] = @OrderID, [PaymentAmount] = @PaymentAmount, [PaymentDate] = @PaymentDate, [PaymentMethod] = @PaymentMethod, [PaymentStatus] = @PaymentStatus WHERE [PaymentID] = @PaymentID">
+                    <DeleteParameters>
+                        <asp:Parameter Name="PaymentID" Type="Int32" />
+                    </DeleteParameters>
+                    <InsertParameters>
+                        <asp:Parameter Name="PaymentID" Type="Int32" />
+                        <asp:Parameter Name="OrderID" Type="Int32" />
+                        <asp:Parameter Name="PaymentAmount" Type="Decimal" />
+                        <asp:Parameter DbType="Date" Name="PaymentDate" />
+                        <asp:Parameter Name="PaymentMethod" Type="String" />
+                        <asp:Parameter Name="PaymentStatus" Type="String" />
+                    </InsertParameters>
+                    <SelectParameters>
+                        <asp:Parameter Name="PaymentID" Type="Int32" />
+                    </SelectParameters>
+                    <UpdateParameters>
+                        <asp:Parameter Name="OrderID" Type="Int32" />
+                        <asp:Parameter Name="PaymentAmount" Type="Decimal" />
+                        <asp:Parameter DbType="Date" Name="PaymentDate" />
+                        <asp:Parameter Name="PaymentMethod" Type="String" />
+                        <asp:Parameter Name="PaymentStatus" Type="String" />
+                        <asp:Parameter Name="PaymentID" Type="Int32" />
+                    </UpdateParameters>
+                </asp:SqlDataSource>
+                <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:S26Team4ConnectionString %>" DeleteCommand="DELETE FROM [Shipment] WHERE [ShipmentID] = @ShipmentID" InsertCommand="INSERT INTO [Shipment] ([ShipmentID], [OrderID], [Carrier], [TrackingNum], [ShipmentStatus], [EstimatedDeliveryDate], [ShippedAt], [DeliveredAt]) VALUES (@ShipmentID, @OrderID, @Carrier, @TrackingNum, @ShipmentStatus, @EstimatedDeliveryDate, @ShippedAt, @DeliveredAt)" SelectCommand="SELECT * FROM [Shipment] WHERE ([ShipmentID] = @ShipmentID)" UpdateCommand="UPDATE [Shipment] SET [OrderID] = @OrderID, [Carrier] = @Carrier, [TrackingNum] = @TrackingNum, [ShipmentStatus] = @ShipmentStatus, [EstimatedDeliveryDate] = @EstimatedDeliveryDate, [ShippedAt] = @ShippedAt, [DeliveredAt] = @DeliveredAt WHERE [ShipmentID] = @ShipmentID">
+                    <DeleteParameters>
+                        <asp:Parameter Name="ShipmentID" Type="Int32" />
+                    </DeleteParameters>
+                    <InsertParameters>
+                        <asp:Parameter Name="ShipmentID" Type="Int32" />
+                        <asp:Parameter Name="OrderID" Type="Int32" />
+                        <asp:Parameter Name="Carrier" Type="String" />
+                        <asp:Parameter Name="TrackingNum" Type="String" />
+                        <asp:Parameter Name="ShipmentStatus" Type="String" />
+                        <asp:Parameter DbType="Date" Name="EstimatedDeliveryDate" />
+                        <asp:Parameter DbType="Date" Name="ShippedAt" />
+                        <asp:Parameter DbType="Date" Name="DeliveredAt" />
+                    </InsertParameters>
+                    <SelectParameters>
+                        <asp:Parameter Name="ShipmentID" Type="Int32" />
+                    </SelectParameters>
+                    <UpdateParameters>
+                        <asp:Parameter Name="OrderID" Type="Int32" />
+                        <asp:Parameter Name="Carrier" Type="String" />
+                        <asp:Parameter Name="TrackingNum" Type="String" />
+                        <asp:Parameter Name="ShipmentStatus" Type="String" />
+                        <asp:Parameter DbType="Date" Name="EstimatedDeliveryDate" />
+                        <asp:Parameter DbType="Date" Name="ShippedAt" />
+                        <asp:Parameter DbType="Date" Name="DeliveredAt" />
+                        <asp:Parameter Name="ShipmentID" Type="Int32" />
+                    </UpdateParameters>
+                </asp:SqlDataSource>
+            </td>
             <td>
                 <asp:Button ID="btnCheckout" runat="server" OnClick="btnCheckout_Click" Text="Checkout" />
             </td>

@@ -30,8 +30,7 @@ namespace Everlast
             Session["CardName"] = txtCardName.Text;
             Session["CardNum"] = txtCardNum.Text;
             Session["ExpDate"] = txtExpDate.Text;
-            Session["SecurityCode"] = txtSecurityCode.Text;
-            //Session["OrderTotal"] = lblTotal.Text;
+            Session["SecurityCode"] = txtSecurityCode.Text; 
 
             // Redirect user
             Response.Redirect("OrderConfirmation.aspx");

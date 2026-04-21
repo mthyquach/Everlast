@@ -128,16 +128,77 @@
             </asp:DropDownList>
         </div>
 
-        <div class="auto-style15">
-            <span class="auto-style14">Engraving:</span>
-            <asp:TextBox ID="txtEngraving" runat="server" CssClass="auto-style13"></asp:TextBox>
+        <!-- Stone Shape -->
+<div class="auto-style15">
+    <span class="auto-style14">Stone Shape:</span>
+    <asp:DropDownList ID="ddlShape" runat="server" CssClass="auto-style13">
+        <asp:ListItem>Round</asp:ListItem>
+        <asp:ListItem>Princess</asp:ListItem>
+        <asp:ListItem>Oval</asp:ListItem>
+        <asp:ListItem>Emerald</asp:ListItem>
+        <asp:ListItem>Heart</asp:ListItem>
+    </asp:DropDownList>
+</div>
+
+<!-- Carat Size -->
+<div class="auto-style15">
+    <span class="auto-style14">Carat Size:</span>
+    <asp:DropDownList ID="ddlCaratSize" runat="server" CssClass="auto-style13">
+        <asp:ListItem>0.5</asp:ListItem>
+        <asp:ListItem>1.0</asp:ListItem>
+        <asp:ListItem>1.5</asp:ListItem>
+        <asp:ListItem>2.0</asp:ListItem>
+    </asp:DropDownList>
+</div>
+
+<!-- Carat Weight -->
+<div class="auto-style15">
+    <span class="auto-style14">Carat Weight:</span>
+    <asp:DropDownList ID="ddlCaratWeight" runat="server" CssClass="auto-style13">
+        <asp:ListItem>Light</asp:ListItem>
+        <asp:ListItem>Medium</asp:ListItem>
+        <asp:ListItem>Heavy</asp:ListItem>
+    </asp:DropDownList>
+</div>
+
+<!-- Setting Style -->
+<div class="auto-style15">
+    <span class="auto-style14">Setting Style:</span>
+    <asp:DropDownList ID="ddlSetting" runat="server" CssClass="auto-style13">
+        <asp:ListItem>Prong</asp:ListItem>
+        <asp:ListItem>Bezel</asp:ListItem>
+        <asp:ListItem>Halo</asp:ListItem>
+        <asp:ListItem>Pave</asp:ListItem>
+    </asp:DropDownList>
+</div>
+
+<!-- Band Style -->
+<div class="auto-style15">
+    <span class="auto-style14">Band Style:</span>
+    <asp:DropDownList ID="ddlBandStyle" runat="server" CssClass="auto-style13">
+        <asp:ListItem>Plain</asp:ListItem>
+        <asp:ListItem>Twisted</asp:ListItem>
+        <asp:ListItem>Diamond Band</asp:ListItem>
+        <asp:ListItem>Vintage</asp:ListItem>
+    </asp:DropDownList>
+</div>
+
+<!-- Prong Style -->
+<div class="auto-style15">
+    <span class="auto-style14">Prong Style:</span>
+    <asp:DropDownList ID="ddlProngStyle" runat="server" CssClass="auto-style13">
+        <asp:ListItem>4-Prong</asp:ListItem>
+        <asp:ListItem>6-Prong</asp:ListItem>
+        <asp:ListItem>V-Prong</asp:ListItem>
+    </asp:DropDownList>
+</div>
         </div>
 
         <div class="auto-style15">
             <asp:Button ID="btnShowDesign" runat="server" Text="Show My Design" CssClass="auto-style16" OnClick="btnShowDesign_Click" />
         </div>
 
-    </div>
+    
 
     <div class="auto-style17">
         <strong>Your Design Summary:</strong><br /><br />
