@@ -15,7 +15,7 @@
             text-align: center;
             font-size: 20px;
             font-weight: 400;
-            color: #6f6f6f;
+            color: rosybrown;
             margin: 18px 0 12px 0;
         }
 
@@ -135,8 +135,11 @@
 &nbsp;|
     <asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="~/MyAccount.aspx" style="text-decoration: none">My Account</asp:HyperLink>
 &nbsp;</p>
-        </div>
         <hr class="everlast-divider" />
+
+            <h2>
+                <strong>Customer Form</strong></h2>
+        </div>
 
         <div class="info-wrap">
             <div class="info-row">

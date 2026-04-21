@@ -6,7 +6,7 @@
         <div class="everlast-title">    <h1>
         <strong>EVERLAST</strong></h1>
             <p>
-                <asp:HyperLink ID="HyperLink5" runat="server" CssClass="auto-style3" NavigateUrl="~/HomePage.aspx">Home</asp:HyperLink>
+                <asp:HyperLink ID="HyperLink5" runat="server" CssClass="auto-style4" NavigateUrl="~/HomePage.aspx">Home</asp:HyperLink>
                 <span class="auto-style2">&nbsp;| <strong>Customer Form</strong>&nbsp;|
     <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/DesignSessionInfo.aspx" CssClass="auto-style3">Design Session</asp:HyperLink>
 &nbsp;|
@@ -17,7 +17,9 @@
             </p>
         </div>
         <hr class="everlast-divider" />
-        <div class="everlast-subtitle">Customer Form</div>
+        <div class="everlast-subtitle">
+            <h2>Customer Form</h2>
+        </div>
 
         <div class="form-wrap">
             <div class="section-heading">1. About the Couple</div>
@@ -163,6 +165,10 @@
         }
         .auto-style3 {
             text-decoration: none;
+        }
+        .auto-style4 {
+            text-decoration: none;
+            font-size: 20px;
         }
     </style>
 </asp:Content>
