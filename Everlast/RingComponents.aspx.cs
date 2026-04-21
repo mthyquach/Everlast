@@ -14,7 +14,7 @@ namespace Everlast
         }
         protected void btnGoToDesign_Click(object sender, EventArgs e)
         {
-            Response.Redirect("RingDesign.aspx");
+            Response.Redirect("ShippingPayment.aspx");
         }
     }
 }
