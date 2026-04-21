@@ -9,8 +9,8 @@
             font-size: 20px;
         }
         .auto-style10 {
-            width: 1109px;
-            height: 683px;
+            width: 1009px;
+            height: 523px;
         }
     .auto-style12 {
             width: 1109px;
@@ -89,7 +89,7 @@
 
         <div class="auto-style15">
             <span class="auto-style14">Ring Style:</span>
-            <asp:DropDownList ID="ddlStyle" runat="server" CssClass="auto-style13">
+            <asp:DropDownList ID="ddlStyle" runat="server" CssClass="auto-style13" OnSelectedIndexChanged="ddlStyle_SelectedIndexChanged">
                 <asp:ListItem>Solitaire</asp:ListItem>
                 <asp:ListItem>Halo</asp:ListItem>
                 <asp:ListItem>Vintage</asp:ListItem>
@@ -119,7 +119,7 @@
 
         <div class="auto-style15">
             <span class="auto-style14">Ring Size:</span>
-            <asp:DropDownList ID="ddlSize" runat="server" CssClass="auto-style13">
+            <asp:DropDownList ID="ddlSize" runat="server" CssClass="auto-style13" OnSelectedIndexChanged="ddlSize_SelectedIndexChanged">
                 <asp:ListItem>5</asp:ListItem>
                 <asp:ListItem>6</asp:ListItem>
                 <asp:ListItem>7</asp:ListItem>
@@ -144,4 +144,10 @@
         <asp:Label ID="lblResult" runat="server"></asp:Label>
     </div>
 
+    <div style="text-align:center; margin-top:20px;">
+        <asp:Button ID="btnProceed" runat="server"
+            Text="Proceed to Shipping &amp; Payment"
+            CssClass="auto-style16"
+            OnClick="btnProceed_Click" />
+    </div>
 </asp:Content>

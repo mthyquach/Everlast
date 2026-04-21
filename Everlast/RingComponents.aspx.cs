@@ -11,7 +11,10 @@ namespace Everlast
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+        }
+        protected void btnGoToDesign_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("RingDesign.aspx");
         }
     }
 }
