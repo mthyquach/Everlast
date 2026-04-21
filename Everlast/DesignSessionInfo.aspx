@@ -15,7 +15,7 @@
             text-align: center;
             font-size: 20px;
             font-weight: 400;
-            color: #6f6f6f;
+            color: rosybrown;
             margin: 18px 0 12px 0;
         }
 
